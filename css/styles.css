@@ -1,0 +1,16 @@
+.title {
+    text-align: center;
+}
+
+.button-class {
+    padding: 16px 32px;
+    margin: 5px 2px;
+    text-align: center;
+    font-size: 20px;
+    display: inline-block;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border: 2px solid #206802;
+    background-color: #bcd1b3;
+}
