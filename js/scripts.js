@@ -64,7 +64,8 @@ let pokemonRepository = (function () {
     }
 
     //Function to show the content in the modal
-    function showModal(title, text, img) {
+    function showDetails(pokemon) {
+        loadDetails(pokemon).then(function ()  {
         //Clear all existing modal content
         modalContainer.innerHTML = '';
 
@@ -94,7 +95,8 @@ let pokemonRepository = (function () {
         modalContainer.appendChild(modal);
 
         modalContainer.classList.add('is-visible');
-    }
+    });
+}
 
     //Function to hide the modal
     function hideModal() {
@@ -116,11 +118,11 @@ let pokemonRepository = (function () {
 
 
     //Function that's executed when user clicks on a Pokemon- gets the Pokemon's details from the server
-    function showDetails(pokemon) {
-        loadDetails(pokemon).then(function () {
-            showModal(pokemon.name, 'Height: ' + pokemon.height, pokemon.imgageUrl)
-        });
-    }
+    // function showDetails(pokemon) {
+    //     loadDetails(pokemon).then(function () {
+    //         showModal(pokemon.name, 'Height: ' + pokemon.height, pokemon.imgageUrl)
+    //     });
+    // }
 
     return {
         add: add,
