@@ -30,8 +30,10 @@ let pokemonRepository = (function () {
         button.classList.add('button-class')
         listItem.appendChild(button);
         pokemonList.appendChild(listItem);
-        button.addEventListener('click', () => showDetails(pokemon));
-    }
+        button.addEventListener('click', function(event) {
+            showDetails(pokemon);
+    });
+}
     //Promise function to fetch data from the API
     function loadList(){
         return fetch(apiUrl).then(function (response) {
@@ -85,8 +87,8 @@ let pokemonRepository = (function () {
         contentElement.innerText = 'Height: ' + pokemon.height; //
 
         let imageElement = document.createElement('img');
-        imageElement.src = item.imageUrl;
-        imageElement.alt = item.name;
+        imageElement.src = pokemon.imageUrl;
+        imageElement.alt = pokemon.name;
 
         modal.appendChild(closeButtonElement);
         modal.appendChild(titleElement);
