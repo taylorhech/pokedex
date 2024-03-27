@@ -1,14 +1,14 @@
-## Pokedex App
+# Pokedex App
 
-Project Description:
+## Project Description:
 
 This is a simple application displaying a list of pokemon and allows the user to view more details when the name is clicked. When a list item (name) is clicked, a modal (popup box/window) opens with the pokemon name, picture, height, and type.
 
-How to get the project running:
+## How to get the project running:
 
 This app is built utilizing HTML, CSS, JavaScript (including jQuery) and Bootstrap.
 
-Project Dependencies:
+## Project Dependencies:
 
 jQuery: <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
@@ -18,4 +18,5 @@ Bootstrap.js: <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/
 
 ESLint and Prettier
 
-API the project uses: "https://pokeapi.co/api/v2/pokemon/"
+## API the Project Uses
+"https://pokeapi.co/api/v2/pokemon/"
